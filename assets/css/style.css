@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.navbar, footer {
+    background-color: #6E7C7C;
+    color: white;
+}
+
+.navbar-brand {
+    color: #f7f7f7;
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+
+.nav-link {
+    color: #f7f7f7;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #C8C6A7;
+}
+
+.hero {
+    height: 90vh;
+}
+
+.hero h1, h3, h2 {
+    color: #435560;
+}
+
+.hero > .btn {
+    background-color: #92967D;
+}
+
+.login  .card {
+    background-color: #6E7C7C;
+}
+
+/*Halaman admin*/
+.list-menu {
+    background-color: #6E7C7C;
+}
+
+.list-menu .dropdown-item {
+    color: white;
+}
+
+.list-menu .dropdown-item:hover {
+    background-color: #92967D;
+    font-weight: bold;
+}
+
+.umum {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Menyediakan scrollbar horizontal jika konten melebihi lebar container */
+    white-space: nowrap; /* Menghindari wrapping konten ke baris baru */
+}
+
+.info {
+    flex: 0 0 250px;
+    height: 120px;
+    padding: 30px;
+    text-align: center;
+    background-color: #435560;
+    color: white;
+    overflow: hidden;
+    display: flex;
+}
+
+
+.info:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.info .keterangan {
+    width: 60%;
+}
+
+
+.info .gambar {
+    width: 40%;
+}
+
+.info > .gambar > img{
+    width: 70%;
+    filter: invert(100%);
+}
+
+.hasil img {
+    width: 30%;
+}
+
+@media (min-width: 360px) and (max-width: 575px){
+    .umum {
+        overflow-x: auto; /* Menghidupkan scroll horizontal */
+        flex-wrap: nowrap; /* Memastikan item tidak wrap secara vertikal */
+    }
+    .hasil {
+        overflow-x: scroll;
+    }
+
+    .hasil img {
+        width: 70%;
+    }
+
+    .table-data{
+        overflow-x: auto;
+    }
+
+}
+
+/* akhir Halaman admin*/
+
+/*handphone*/
+@media (max-width: 575px) {
+    .nav-link {
+        text-align: center;
+    }
+    .hero-image {
+        margin-top: 30px;
+    }
+    #kegiatan {
+        margin-top: 40px;
+    }
+    .login {
+        margin: 15px;
+    }
+    footer {
+        text-align: center;
+    }
+
+    .list-menu {
+        text-align: center;
+    }
+}
+
+/*tablet*/
+@media (max-width: 991.98px) {
+
+}
